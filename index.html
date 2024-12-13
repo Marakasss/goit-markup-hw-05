@@ -493,6 +493,77 @@
         </div>
       </section>
     </main>
+
+    <!-----------------------------Modal window------------------------------>
+
+    <div class="modal-overlay is-open">
+      <div class="modal">
+        <button class="close-icon" type="submit">
+          <svg class="modal-icon" width="13" height="13">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-deskr">Leave your contacts and we will call you back</p>
+        <form class="form-modal" action="#" name="feedback_form">
+          <label class="modal-label"
+            >Name
+            <div class="input-wrapper">
+              <input class="modal-input" type="text" name="username" />
+              <svg class="modal-icon" width="12" height="12">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </label>
+
+          <label class="modal-label"
+            >Phone
+            <div class="input-wrapper">
+              <input class="modal-input" type="tel" name="phone_num" />
+              <svg class="modal-icon" width="13" height="13">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </label>
+
+          <label class="modal-label"
+            >Email
+            <div class="input-wrapper">
+              <input class="modal-input" type="email" name="usermail" />
+              <svg class="modal-icon" width="15" height="12">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </label>
+
+          <label class="modal-label"
+            >Comment
+            <textarea
+              class="modal-textarea"
+              name="feedback_area"
+              placeholder="Text input"
+            >
+            </textarea>
+          </label>
+
+          <div class="privacy-box">
+            <input
+              class="modal-checkbox"
+              type="checkbox"
+              name="priv_policy"
+              id="priv_policy"
+              value="priv_policy"
+            />
+            <label class="modal-label" for="priv_policy">
+              I accept the terms and conditions of the
+              <a class="privacy-link" href="#">Privacy Policy</a>
+            </label>
+          </div>
+
+          <button class="form-btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
     <!-----------------------------Footer------------------------------>
     <footer class="footer-section">
       <div class="container">
@@ -551,6 +622,25 @@
             </li>
           </ul>
         </div>
+
+        <form class="footer-mailform" name="mailform" action="#">
+          <label class="footer-mailform-label">
+            Subscribe
+            <input
+              class="footer-mailform-input"
+              type="email"
+              name="usermail"
+              placeholder="E-mail"
+              autofocus
+            />
+          </label>
+          <button class="form-btn" type="submit">
+            Subscribe
+            <svg class="icon" width="24" height="20">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
   </body>
