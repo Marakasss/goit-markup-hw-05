@@ -39,7 +39,7 @@
             <li class="nav-item"><a href="" class="link">Contacts</a></li>
           </ul>
         </nav>
-        <!--------------------------Contacts-------------------------->
+        <!---------Contacts---------->
         <address class="contacts">
           <ul class="contacts-item">
             <li>
@@ -70,6 +70,7 @@
       <section class="section feature-section">
         <div class="container feature-container">
           <h2 class="visually-hidden">Features</h2>
+
           <ul class="feature-list">
             <li class="list-items-box">
               <div class="feature-icon-container">
@@ -77,13 +78,13 @@
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-
               <h3 class="feature-tittle">Strategy</h3>
               <p class="feature-descr">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
+
             <li class="list-items-box">
               <div class="feature-icon-container">
                 <svg class="icon" width="64" height="64">
@@ -96,6 +97,7 @@
                 within the shortest possible time.
               </p>
             </li>
+
             <li class="list-items-box">
               <div class="feature-icon-container">
                 <svg class="icon" width="64" height="64">
@@ -108,6 +110,7 @@
                 growth opportunities and minimize risk.
               </p>
             </li>
+
             <li class="list-items-box">
               <div class="feature-icon-container">
                 <svg class="icon" width="64" height="64">
@@ -129,6 +132,7 @@
       <section class="section team-section">
         <div class="container">
           <h2 class="section-tittle">Our Team</h2>
+
           <ul class="team-list">
             <li class="list-items-box">
               <img
@@ -140,7 +144,7 @@
               <div class="team-cardinfo">
                 <h3 class="name-tittle">Mark Guerrero</h3>
                 <p class="position">Product Designer</p>
-
+                <!----Links---->
                 <ul class="social-links">
                   <li class="social-links-list">
                     <a
@@ -185,6 +189,7 @@
                 </ul>
               </div>
             </li>
+
             <li class="list-items-box">
               <img
                 src="./images/tom.jpg"
@@ -195,6 +200,7 @@
               <div class="team-cardinfo">
                 <h3 class="name-tittle">Tom Ford</h3>
                 <p class="position">Frontend Developer</p>
+                <!----Links---->
                 <ul class="social-links">
                   <li class="social-links-list">
                     <a
@@ -239,6 +245,7 @@
                 </ul>
               </div>
             </li>
+
             <li class="list-items-box">
               <img
                 src="./images/camila.jpg"
@@ -249,6 +256,7 @@
               <div class="team-cardinfo">
                 <h3 class="name-tittle">Camila Garcia</h3>
                 <p class="position">Marketing</p>
+                <!----Links---->
                 <ul class="social-links">
                   <li class="social-links-list">
                     <a
@@ -293,6 +301,7 @@
                 </ul>
               </div>
             </li>
+
             <li class="list-items-box">
               <img
                 src="./images/daniel.jpg"
@@ -303,6 +312,7 @@
               <div class="team-cardinfo">
                 <h3 class="name-tittle">Daniel Wilson</h3>
                 <p class="position">UI Designer</p>
+                <!----Links---->
                 <ul class="social-links">
                   <li class="social-links-list">
                     <a
@@ -499,11 +509,13 @@
     <div class="modal-overlay is-open">
       <div class="modal">
         <button class="close-icon" type="submit">
-          <svg class="modal-icon" width="13" height="13">
+          <svg class="modal-icon-close" width="13" height="13">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
         <p class="modal-deskr">Leave your contacts and we will call you back</p>
+
+        <!-------Modal Form--------->
         <form class="form-modal" action="#" name="feedback_form">
           <label class="modal-label"
             >Name
@@ -535,29 +547,34 @@
             </div>
           </label>
 
+          <!-------TextArea--------->
           <label class="modal-label"
             >Comment
             <textarea
               class="modal-textarea"
               name="feedback_area"
               placeholder="Text input"
-            >
-            </textarea>
+            ></textarea>
           </label>
+          <!-------Checkbox & Button--------->
 
-          <div class="privacy-box">
-            <input
-              class="modal-checkbox"
-              type="checkbox"
-              name="priv_policy"
-              id="priv_policy"
-              value="priv_policy"
-            />
-            <label class="modal-label" for="priv_policy">
-              I accept the terms and conditions of the
-              <a class="privacy-link" href="#">Privacy Policy</a>
-            </label>
-          </div>
+          <input
+            class="hidden-checkbox"
+            type="checkbox"
+            name="priv_policy"
+            id="priv_policy"
+            value="agree"
+          />
+          <label class="modal-checkbox" for="priv_policy">
+            <span class="custom-checkbox">
+              <svg class="svg-checkbox" width="10" height="8">
+                <use href="./images/icons.svg#icon-checkbox"></use>
+              </svg>
+            </span>
+
+            I accept the terms and conditions of the
+            <a class="privacy-link" href="#">Privacy Policy</a>
+          </label>
 
           <button class="form-btn" type="submit">Send</button>
         </form>
@@ -565,6 +582,7 @@
     </div>
 
     <!-----------------------------Footer------------------------------>
+
     <footer class="footer-section">
       <div class="container">
         <div class="slogan-box">
@@ -577,6 +595,8 @@
             marketing & growth solutions.
           </p>
         </div>
+
+        <!-------Social links--------->
         <div class="social-links-box">
           <p class="social-title slogan">Social media</p>
           <ul class="social-links">
@@ -591,6 +611,7 @@
                 </svg>
               </a>
             </li>
+
             <li class="social-links-list">
               <a href="https://x.com/" target="_blank" class="link-icon">
                 <svg class="icon" width="24" height="24">
@@ -598,6 +619,7 @@
                 </svg>
               </a>
             </li>
+
             <li class="social-links-list">
               <a
                 href="https://www.facebook.com/"
@@ -609,6 +631,7 @@
                 </svg>
               </a>
             </li>
+
             <li class="social-links-list">
               <a
                 href="https://www.linkedin.com/"
@@ -623,6 +646,7 @@
           </ul>
         </div>
 
+        <!-------Email Form--------->
         <form class="footer-mailform" name="mailform" action="#">
           <label class="footer-mailform-label">
             Subscribe
