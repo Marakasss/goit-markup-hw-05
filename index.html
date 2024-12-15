@@ -504,83 +504,6 @@
       </section>
     </main>
 
-    <!-----------------------------Modal window------------------------------>
-
-    <div class="modal-overlay is-open">
-      <div class="modal">
-        <button class="close-icon" type="submit">
-          <svg class="modal-icon-close" width="13" height="13">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-        <p class="modal-deskr">Leave your contacts and we will call you back</p>
-
-        <!-------Modal Form--------->
-        <form class="form-modal" action="#" name="feedback_form">
-          <label class="modal-label"
-            >Name
-            <div class="input-wrapper">
-              <input class="modal-input" type="text" name="username" />
-              <svg class="modal-icon" width="12" height="12">
-                <use href="./images/icons.svg#icon-person"></use>
-              </svg>
-            </div>
-          </label>
-
-          <label class="modal-label"
-            >Phone
-            <div class="input-wrapper">
-              <input class="modal-input" type="tel" name="phone_num" />
-              <svg class="modal-icon" width="13" height="13">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
-            </div>
-          </label>
-
-          <label class="modal-label"
-            >Email
-            <div class="input-wrapper">
-              <input class="modal-input" type="email" name="usermail" />
-              <svg class="modal-icon" width="15" height="12">
-                <use href="./images/icons.svg#icon-email"></use>
-              </svg>
-            </div>
-          </label>
-
-          <!-------TextArea--------->
-          <label class="modal-label"
-            >Comment
-            <textarea
-              class="modal-textarea"
-              name="feedback_area"
-              placeholder="Text input"
-            ></textarea>
-          </label>
-          <!-------Checkbox & Button--------->
-
-          <input
-            class="hidden-checkbox"
-            type="checkbox"
-            name="priv_policy"
-            id="priv_policy"
-            value="agree"
-          />
-          <label class="modal-checkbox" for="priv_policy">
-            <span class="custom-checkbox">
-              <svg class="svg-checkbox" width="10" height="8">
-                <use href="./images/icons.svg#icon-checkbox"></use>
-              </svg>
-            </span>
-
-            I accept the terms and conditions of the
-            <a class="privacy-link" href="#">Privacy Policy</a>
-          </label>
-
-          <button class="form-btn" type="submit">Send</button>
-        </form>
-      </div>
-    </div>
-
     <!-----------------------------Footer------------------------------>
 
     <footer class="footer-section">
@@ -647,25 +570,105 @@
         </div>
 
         <!-------Email Form--------->
-        <form class="footer-mailform" name="mailform" action="#">
-          <label class="footer-mailform-label">
-            Subscribe
-            <input
-              class="footer-mailform-input"
-              type="email"
-              name="usermail"
-              placeholder="E-mail"
-              autofocus
-            />
-          </label>
-          <button class="form-btn" type="submit">
-            Subscribe
-            <svg class="icon" width="24" height="20">
-              <use href="./images/icons.svg#icon-send"></use>
-            </svg>
-          </button>
-        </form>
+        <div class="footer-mailform-wrp">
+          <p class="mailform-dscr">Subscribe</p>
+          <form class="footer-mailform" name="mailform" action="#">
+            <label class="footer-mailform-label">
+              
+              <input
+                class="footer-mailform-input"
+                type="email"
+                name="usermail"
+                placeholder="E-mail"
+                autofocus
+              />
+            </label>
+            <button class="form-btn" type="submit">
+              Subscribe
+              <svg class="icon" width="24" height="20">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+
+    <!-----------------------------Modal window------------------------------>
+
+    <div class="modal-overlay is-open">
+      <div class="modal">
+        <button class="close-icon" type="button">
+          <svg class="modal-icon-close" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-deskr">Leave your contacts and we will call you back</p>
+
+        <!-------Modal Form--------->
+        <form class="form-modal" action="#" name="feedback_form">
+          <label for="username" class="modal-label"
+            >Name
+            <div class="input-wrapper">
+              <input class="modal-input" type="text" name="username" id="username" />
+              <svg class="modal-icon" width="12" height="12">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          
+
+          <label for="phone_num" class="modal-label"
+            >Phone
+            <div class="input-wrapper">
+              <input class="modal-input" type="tel" name="phone_num" id="phone_num" />
+              <svg class="modal-icon" width="13" height="13">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          
+
+          <label for="usermail" class="modal-label"
+            >Email
+            <div class="input-wrapper">
+              <input class="modal-input" type="email" name="usermail" id="usermail" />
+              <svg class="modal-icon" width="15" height="12">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          
+
+           <!-------TextArea--------->
+          <label class="modal-label"
+            >Comment
+            <textarea
+              class="modal-textarea"
+              name="feedback_area"
+              placeholder="Text input"
+            ></textarea>
+          </label>
+          <!-------Checkbox & Button--------->
+
+          <input
+            class="hidden-checkbox"
+            type="checkbox"
+            name="priv_policy"
+            id="priv_policy"
+            value="agree"
+          />
+          <label class="modal-checkbox" for="priv_policy">
+            <span class="custom-checkbox">
+              <svg class="svg-checkbox" width="10" height="8">
+                <use href="./images/icons.svg#icon-checkbox"></use>
+              </svg>
+            </span>
+
+            I accept the terms and conditions of the
+            <a class="privacy-link" href="#">Privacy Policy</a>
+          </label>
+
+          <button class="form-btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
