@@ -726,13 +726,13 @@ body {
 }
 
 .custom-checkbox {
+    display: inline-flex;
     width: 16px;
     height: 16px;
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     background-color: transparent;
     fill: transparent;
-    display: inline-flex;
     align-items: center;
     justify-content: center;
     margin-right: 8px;
@@ -740,16 +740,9 @@ body {
     
 }
 
-.svg-checkbox {
-    fill: transparent;
-}
 
-.visually-hidden:checked+.modal-checkbox>.custom-checkbox>.svg-checkbox {
-    fill: #f4f4fd;
-}
-
-.visually-hidden:checked+.modal-checkbox > .custom-checkbox {
+.visually-hidden:checked + .modal-checkbox > .custom-checkbox {
     background-color: #404BBF;
     border: none;
-    
+    fill: #f4f4fd;
 }
