@@ -571,6 +571,7 @@ body {
 
 .modal-textarea {
     line-height: 1.17;
+    letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
     background-color: transparent;
     outline: transparent;
@@ -636,6 +637,7 @@ body {
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: #4d5ae5;
+    margin-left: 4px;
 }
 
 .checkbox-wrp{
@@ -716,10 +718,7 @@ body {
 .input-field:focus-within .modal-icon {
     fill: #4d5ae5;
 }
-.modal-textarea,
-.modal-input {
-    outline: none;
-}
+
 
 .modal-textarea:focus-within,
 .modal-input:focus-within  {
@@ -732,10 +731,12 @@ body {
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     background-color: transparent;
+    fill: transparent;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     margin-right: 8px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
@@ -744,10 +745,11 @@ body {
 }
 
 .visually-hidden:checked+.modal-checkbox>.custom-checkbox>.svg-checkbox {
-    fill: #fff;
+    fill: #f4f4fd;
 }
 
 .visually-hidden:checked+.modal-checkbox > .custom-checkbox {
     background-color: #404BBF;
     border: none;
+    
 }
