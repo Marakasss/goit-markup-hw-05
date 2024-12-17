@@ -61,7 +61,9 @@
       <section class="section header-section">
         <div class="container">
           <h1 class="page-tittle">Effective Solutions for Your Business</h1>
-          <button class="order-button" type="button">Order Service</button>
+          <button class="order-button" type="button" id="modal_openBtn">
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -595,9 +597,9 @@
 
     <!-----------------------------Modal window------------------------------>
 
-    <div class="modal-overlay is-open">
+    <div class="modal-overlay" id="modalOverlay">
       <div class="modal">
-        <button class="close-icon" type="button">
+        <button class="close-icon" type="button" id="modal_closeBtn">
           <svg class="modal-icon-close" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -687,5 +689,22 @@
         </form>
       </div>
     </div>
+
+    <script>
+      const modal_openBtn = document.getElementById('modal_openBtn');
+      const modal_closeBtn = document.getElementById('modal_closeBtn');
+      const modalOverlay = document.getElementById('modalOverlay');
+
+      const openModal = () => {
+        modalOverlay.classList.add('is-open');
+      };
+
+      const closeModal = () => {
+        modalOverlay.classList.remove('is-open');
+      };
+
+      modal_openBtn.addEventListener('click', openModal);
+      modal_closeBtn.addEventListener('click', closeModal);
+    </script>
   </body>
 </html>
