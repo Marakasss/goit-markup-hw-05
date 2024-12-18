@@ -12,5 +12,9 @@
 
 modal_openBtn.addEventListener('click', openModal);
 modal_closeBtn.addEventListener('click', closeModal);
-modalOverlay.addEventListener('click', closeModal);
+modalOverlay.addEventListener('click', (event) => {
+  if (event.target === modalOverlay) {
+    closeModal();
+  }
+});
       
